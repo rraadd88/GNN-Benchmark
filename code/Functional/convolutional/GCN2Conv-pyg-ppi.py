@@ -1,8 +1,8 @@
 import os
 import torch
 from create_pyg import PPI
-from codecarbon import EmissionsTracker
-from energy_logger import energy_logger
+# from codecarbon import EmissionsTracker
+# from energy_logger import energy_logger
 import time
 from torch_sparse import SparseTensor
 from torch_geometric.utils import add_self_loops

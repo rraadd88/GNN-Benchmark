@@ -24,18 +24,18 @@ class PPI(InMemoryDataset):
     def processed_file_names(self) -> str:
         return 'data.pt'
 
-    # def download(self):
-    #     path = download_url(self.url.format(self.adj_full_id), self.raw_dir)
-    #     os.rename(path, osp.join(self.raw_dir, 'adj_full.npz'))
+#     def download(self):
+#         path = download_url(self.url.format(self.adj_full_id), self.raw_dir)
+#         os.rename(path, osp.join(self.raw_dir, 'adj_full.npz'))
 
-    #     path = download_url(self.url.format(self.feats_id), self.raw_dir)
-    #     os.rename(path, osp.join(self.raw_dir, 'feats.npy'))
+#         path = download_url(self.url.format(self.feats_id), self.raw_dir)
+#         os.rename(path, osp.join(self.raw_dir, 'feats.npy'))
 
-    #     path = download_url(self.url.format(self.class_map_id), self.raw_dir)
-    #     os.rename(path, osp.join(self.raw_dir, 'class_map.json'))
+#         path = download_url(self.url.format(self.class_map_id), self.raw_dir)
+#         os.rename(path, osp.join(self.raw_dir, 'class_map.json'))
 
-    #     path = download_url(self.url.format(self.role_id), self.raw_dir)
-    #     os.rename(path, osp.join(self.raw_dir, 'role.json'))
+#         path = download_url(self.url.format(self.role_id), self.raw_dir)
+#         os.rename(path, osp.join(self.raw_dir, 'role.json'))
 
     def process(self):
         f = np.load(osp.join(self.raw_dir, 'adj_full.npz'))

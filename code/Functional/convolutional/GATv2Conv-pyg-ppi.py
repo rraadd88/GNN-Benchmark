@@ -6,8 +6,8 @@ from create_pyg import PPI
 from torch_geometric.loader import ClusterData, ClusterLoader, NeighborSampler
 from torch_geometric.nn import SAGEConv, GCNConv
 from sklearn.metrics import f1_score
-from codecarbon import EmissionsTracker
-from energy_logger import energy_logger
+# from codecarbon import EmissionsTracker
+# from energy_logger import energy_logger
 import time
 from torch_sparse import SparseTensor
 from torch_geometric.utils import add_self_loops

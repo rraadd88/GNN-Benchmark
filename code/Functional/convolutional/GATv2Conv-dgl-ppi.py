@@ -5,8 +5,8 @@ import torch.nn.functional as F
 import dgl
 from sklearn.metrics import f1_score
 from load_graph import load_ppi
-from codecarbon import EmissionsTracker
-from energy_logger import energy_logger
+# from codecarbon import EmissionsTracker
+# from energy_logger import energy_logger
 import time
 
 # log_name = 'dgl-ppi'
